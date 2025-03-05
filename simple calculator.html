@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>SIMPLE CALCULATOR</title>
+</head>
+<body>
+<h1>simple calculator</h1>
+<form>
+<input type="num1"placeholder="enter first number">
+<input type="num1"placeholder="enter second number"><br><br>
+<button type="button"onclick="calculate('+')>add</button>
+<button type="button"onclick="calculate('-')>subtract</button>
+<button type="button"onclick="calculate('*')>multiply</button>
+<button type="button"onclick="calculate('/')>divide</button>
+</form>
+<p id="result"></p>
+<script>
+functioncalculate(operator){
+constnum1=parsefloat(document.getelementbyid("num1").value);
+constnum1=parsefloat(document.getelementbyid("num2").value);
+let result
+if(operator==='+'){
+result=num1=num2;
+}else if(operator==='-'){
+result=num1-num2;
+}else if(operator==='*'){
+result=num1*num2;
+}else if(operator==='/'){
+if(num2!===0){
+result=num1/num2;
+}else{
+result="cannot divide by zero.";
+}
+}
+document.getelementbyid("result").innertext="result:"+result;
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
